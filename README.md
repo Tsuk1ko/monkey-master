@@ -38,6 +38,8 @@ iwr https://deno.land/x/install/install.ps1 -useb | iex
 deno install -qAf --unstable https://deno.land/x/denon/denon.ts
 ```
 
+装完需要按提示添加环境变量
+
 ### 启动
 
 ```bash
