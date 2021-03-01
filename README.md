@@ -1,10 +1,10 @@
 # monkey-master
 
-黄皮衣，酥麻罪恶滔天，此项目诞生于抢购猴卡 RTX3080、RX6800XT.....。
+黄皮衣，酥麻罪恶滔天，此项目诞生于抢购猴卡 RTX3080、RX6800XT.....
 
 ## 目录结构
 
-``` bash
+```text
 monkey-master
 ├── order/
 ├── util/                  
@@ -15,6 +15,7 @@ monkey-master
 ├── start.bat               运行脚本
 └── README.md
 ```
+
 ### 安装
 
 安装 deno:
@@ -34,17 +35,12 @@ iwr https://deno.land/x/install/install.ps1 -useb | iex
 安装依赖插件：
 
 ```bash
-
 deno install -qAf --unstable https://deno.land/x/denon/denon.ts
 ```
 
 ### 启动
 
 ```bash
-deno run --allow-env --allow-read --allow-write --allow-net --allow-run --allow-plugin --unstable --no-check index.js
-
-or
-
 denon start
 ```
 
@@ -52,16 +48,15 @@ denon start
 
 在 conf.json 文件中配置必要参数：
 
-| 参数        | 说明                                                                   | 是否必须 | 数据类型 | 默认值    |
-| ----------- | ---------------------------------------------------------------------- | -------- | -------- | --------- |
-| timeout     | 请求超时时间 单位毫秒                                                  |          | Number   | 5000      |
-| useRandomUA | 启动随机 user-agent                                                    |          | Boolean  | false     |
-| userPath    | 用户信息暂存目录                                                       |          | string   | ./cookie/ |
-| password    | 支付密码                                                               | required | string   |           |
-| eid         | 设备 ID，部分系统可自动获取也可以手动配置                              |          | string   |           |
-| fp          | fingerprint，部分系统可自动获取也可以手动配置                          |          | string   |           |
+| 参数        | 说明                                                           | 是否必须 | 数据类型 | 默认值    |
+| ----------- | -------------------------------------------------------------- | -------- | -------- | --------- |
+| timeout     | 请求超时时间 单位毫秒                                          |          | Number   | 5000      |
+| useRandomUA | 启动随机 user-agent                                            |          | Boolean  | false     |
+| userPath    | 用户信息暂存目录                                               |          | string   | ./cookie/ |
+| password    | 支付密码                                                       | required | string   |           |
+| eid         | 设备 ID，部分系统可自动获取也可以手动配置                      |          | string   |           |
+| fp          | fingerprint，部分系统可自动获取也可以手动配置                  |          | string   |           |
 | sckey       | 用于下单成功的消息推送，这里借用第三方工具 http://sc.ftqq.com/ |          | string   |           |
-
 
 ### 最佳实践
 
@@ -70,6 +65,7 @@ denon start
 - 增加京东金融分期接口，可从秒杀模式进入（听说这个方式节省步骤成功率较高)
 
 ### TODO
+
 - [x] auto get fingerprint (e.g. eid,fp).
 - [x] 秒杀商品
 - [ ] GUI - 部分完成
