@@ -347,7 +347,6 @@ export default class MonkeyMaster {
         const {
             eid = this.eid,
             fp = this.fp,
-            riskControl,
             password,
         } = this.options;
 

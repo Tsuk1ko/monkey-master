@@ -2,8 +2,6 @@
   "timeout": 5000,
   "useRandomUA": false,
   "orderDeps": {
-    "trackId": "TestTrackId",
-    "riskControl": "",
     "password": "123456"
   },
   "userPath": "./cookies/",
